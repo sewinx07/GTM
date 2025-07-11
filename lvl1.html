@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LVL1</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="main"></div>
+  <h1>Welcome to The Mystery</h1>
+  <p>Enter the secret code to move forward:</p>
+  <p1>
+    "I rise but never speak,</br>
+    I light the night but never peak.</br>
+    I borrow glow, I do not burn,</br>
+    Each month I vanish, then return.</br>
+    What am I?"</br>
+  </p1>
+
+  <input type="text" id="codeInput" placeholder="Enter code">
+  <button onclick="checkCode()" class="center">
+    <span class="text">
+        Submit
+    </span>
+  </button>
+  <p id="message"></p>
+
+  <script>
+    function checkCode() {
+      const code = document.getElementById("codeInput").value;
+      if (code === "moon") { window.location.href = "lvl2.html";}
+       else {
+        document.getElementById("message").textContent = "Wrong code! Try again.";
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LVL2</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="main"></div>
+  <h1>Welcome to The Mystery</h1>
+  <p>Enter the secret code to move forward:</p>
+  <p1>
+    "The days between us is first,</br>
+     then we add the first year we meet, +1 </br>
+     but we should remove 6353956"</br>
+     Hint:""If 10 + 2 = 102, 30 + 4 = 304, then 20 + 5 = 205"</br>
+</p1>
+
+  <input type="text" id="codeInput" placeholder="Enter code">
+  <button onclick="checkCode()" class="center">
+    <span class="text">
+        Submit
+    </span>
+  </button>
+  <p id="message"></p>
+
+  <script>
+    function checkCode() {
+      const code = document.getElementById("codeInput").value;
+      if (code === "51166275") { window.location.href = "lvl3.html";}
+       else {
+        document.getElementById("message").textContent = "Wrong code! Try again.";
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>lvl4</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="main"></div>
+  <h1>Welcome to The Mystery</h1>
+  <p>Enter the secret code to move forward:</p>
+  <p1>
+    "I swing through thoughts both night and day,</br>
+    Not a spider, but I feel that way.</br>
+    Some say I’m amazing, others say sly,</br>
+    I may take a brake to answer the phone</br>
+    But if you read my lines, you’ll spot a Spidy sens."</br>
+  </p1>
+
+  <input type="text" id="codeInput" placeholder="Enter code">
+  <button onclick="checkCode()" class="center">
+    <span class="text">
+        Submit
+    </span>
+  </button>
+  <p id="message"></p>
+
+  <script>
+    function checkCode() {
+      const code = document.getElementById("codeInput").value;
+      if (code === "spidy") { window.location.href = "lvl5.html";}
+       else {
+        document.getElementById("message").textContent = "Wrong code! Try again.";
+      }
+    }
+  </script>
+</body>
+</html>

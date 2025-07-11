@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>lvl3</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="main"></div>
+  <h1>Welcome to The Mystery</h1>
+  <p>Enter the secret code to move forward:</p>
+  <p1>
+    "I’m not Google, but I’ve got what you’re searching for.</br>
+    Not a magnet, but I'm totally drawn to you more and more.</br>
+    I’m not Wi-Fi, but I feel the connection too...</br>
+    So tell me?</br>
+    who’s the real genius? </br>
+    Me or you?</br>
+</p1>
+
+  <input type="text" id="codeInput" placeholder="Enter code">
+  <button onclick="checkCode()" class="center">
+    <span class="text">
+        Submit
+    </span>
+  </button>
+  <p id="message"></p>
+
+  <script>
+    function checkCode() {
+      const code = document.getElementById("codeInput").value;
+      if (code === "me") { window.location.href = "lvl4.html";}
+       else {
+        document.getElementById("message").textContent = "Wrong code! Try 'Me', obviously. I found you.";
+      }
+    }
+  </script>
+</body>
+</html>
