@@ -9,32 +9,27 @@
 </head>
 <body>
   <div class="main"></div>
-  <h1>Welcome to The Mystery</h1>
-  <p>Enter the secret code to move forward:</p>
+  <h1>Soooo you make it to the final question!</h1>
   <p1>
-    "I swing through thoughts both night and day,</br>
-    Not a spider, but I feel that way.</br>
-    Some say I’m amazing, others say sly,</br>
-    I may take a brake to answer the phone</br>
-    But if you read my lines, you’ll spot a Spidy sens."</br>
-  </p1>
+    "So… I know we’re not in the same universe.</br>
+    I mean technically we are, but...</br>
+    if we weren’t I’d still find a way to swing to yours.”</br></br>
 
-  <input type="text" id="codeInput" placeholder="Enter code">
-  <button onclick="checkCode()" class="center">
+    "Because in every dimension,</br>
+    every timeline,</br>
+    every glitch in the multiverse…</br>
+    you’re still the one I’d fall for."</br></br>
+
+    
+  </p1>
+</br>
+</br>
+  <button class="center">
     <span class="text">
-        Submit
+        <a href="lvl5.html">NEXT</a>
     </span>
   </button>
-  <p id="message"></p>
+  
 
-  <script>
-    function checkCode() {
-      const code = document.getElementById("codeInput").value;
-      if (code === "spidy") { window.location.href = "lvl5.html";}
-       else {
-        document.getElementById("message").textContent = "Wrong code! Try again.";
-      }
-    }
-  </script>
 </body>
 </html>
